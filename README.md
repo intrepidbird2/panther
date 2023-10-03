@@ -1,1 +1,1 @@
-# panther
+# Panther Bot

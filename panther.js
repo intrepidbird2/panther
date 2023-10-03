@@ -35,7 +35,7 @@ bot.on("messageCreate", async (msg) => {
     const message = msg;
     if (msg.content) {
         let content = msg.content;
-        if (content.startsWith("goose ")) {
+        if (content.startsWith("panther ")) {
             // let channel = await bot.getChannel(message.channel.id);
             // console.log("Got channel", channel);
             let outputMessage = await bot.createMessage(message.channel.id, {
@@ -44,7 +44,7 @@ bot.on("messageCreate", async (msg) => {
                     messageID: message.id
                 }
             });
-            let instruction = content.slice("goose ".length);
+            let instruction = content.slice("panther ".length);
             let context = [];
             let backtrackMessage = message;
             let depth = 0;
@@ -85,8 +85,8 @@ bot.on("messageCreate", async (msg) => {
                         }
                     }
                 }else{
-                    if(contextContent.startsWith("goose ")){
-                        contextContent = contextContent.slice("goose ".length);
+                    if(contextContent.startsWith("panther ")){
+                        contextContent = contextContent.slice("panther ".length);
                     }
                 }
                 

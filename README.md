@@ -1,6 +1,7 @@
 # Panther Bot
 
 🤖 For Bridgewater Raritan ONLY
+
 🤖 Has Wolfram Alpha API
 
 ## Contributing
